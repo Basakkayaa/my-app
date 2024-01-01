@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="credit-card-box" *ngIf="UserWithCardDto">
+        <div class="redit-card-group">
+            <div class="credit-card" *ngFor="let card of UserWithCardDto.cards">
+                <img src="/assets/pngwing.com (1).png" alt="" class="chip w-25">
+                <div class="card-user-name">{{UserWithCardDto.name+ '' +UserWithCardDto.surname}}</div>
+            </div>
+        </div>
+    </div>
+</div>
